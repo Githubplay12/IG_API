@@ -1,2 +1,3 @@
 # IG_API
-Simple API bot for Instagram
+
+Robot d'automatisation intelligent
