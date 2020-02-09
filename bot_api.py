@@ -1,5 +1,3 @@
-#key = 4a53a01ef7e3e10d17a13325af3fc193e95f669a319748a5cc3579adca529b3a for #36
-
 from collections import OrderedDict
 
 import requests
@@ -10,9 +8,6 @@ from Utilitaires.IMGVIDhandler.video_duration_giver import return_duration
 from Utilitaires.IMGVIDhandler.thumbnail_generator import return_thumbnail
 from Utilitaires.global_generator import *
 from Utilitaires.requesthandler import postrequest, getrequest
-
-pingouintest = r'C:\Users\CARBON\Desktop\ping.jpg'
-
 
 class BotApi:
     # Basic user agent (a modifier ?)
@@ -153,7 +148,7 @@ class BotApi:
 
 
 
-    # Get info from current user profil (we need email to change bio ;))
+    # Get info from current user profil (we need email to change bio)
     def get_currentuser_info(self):
 
         getinfourl = self.api_url + '/accounts/current_user/?edit=true'
@@ -239,7 +234,6 @@ class BotApi:
     def dm_1user(self, text, codeuser):
 
         dmurl = self.api_url + '/direct_v2/threads/broadcast/text/'
-        # girlswimsuit code10 = 5835839886
 
         dmdata = {  'recipient_users' : '[['+codeuser+']]',
                     'action': 'send_item',
@@ -631,7 +625,7 @@ class BotApi:
             post_configure_story = postrequest(self.s, url_config_tostory, data=generatesignedbody(data_config_story))
 
 
-bot = BotApi('aberr5410', 'Test@1test@1')
+bot = BotApi('username', 'password')
 bot.login()
 
 
