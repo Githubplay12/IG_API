@@ -33,14 +33,7 @@ def create_account(username, first_name, email, proxy=None):
         ('username', username),
         ('first_name', first_name),
         ('email', email),
-        ('password', password),
-        # ('phone_id', "b85d076f-7d52-440c-89a4-bdcc8ebb5e7e"),
-        # ('_csrftoken', 'RtakdsWi21SeclVEnAeh7Tu4WHr7Rrzt'),
-        # ('adid', "33cf4211-9c4a-47f5-9bed-a8637637b71f"),
-        # ('guid', '18cf5805-e663-4682-9189-0f7f8df9d595'),
-        # ('force_sign_up_code', ""),
-        # ('waterfall_id', "d7034d86-0e3b-4fc7-8617-2a20df4efffe"),
-        # ('qs_stamp', ""),
+        ('password', password)
     ]))
 
     #Basic headers
