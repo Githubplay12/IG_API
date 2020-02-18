@@ -1,3 +1,4 @@
 # IG_API
 
-Robot d'automatisation intelligent pour IG
+An automation tool for Instagram
+This is for education purposes only
